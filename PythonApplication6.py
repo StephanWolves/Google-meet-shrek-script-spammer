@@ -29,8 +29,8 @@ email = os.getenv('email')
 password = os.environ.get('password')
 
 ## gets shrek script
-shrek = open("Shrek.txt", "r")
-text = shrek.read()
+with open("Shrek.txt", "r") as shrek:
+    text = shrek.read()
 
 ## Signs into google
 def sign_in():
